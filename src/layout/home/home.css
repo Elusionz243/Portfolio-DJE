@@ -1,0 +1,39 @@
+.home-bg {
+  background-image: url('../../imgs/BackgroundImage.jpg');
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: 100% contain;
+}
+
+.intro-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12% 0;
+}
+
+.intro {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  max-width: 50%;
+  max-height: auto;
+}
+
+.introduction-text {
+  font-size: 1.2rem;
+  margin: 15px;
+}
+
+.portrait {
+  max-width: 50%;
+  border-radius: 3%;
+}
+
+.card-background {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0 1%;
+}
