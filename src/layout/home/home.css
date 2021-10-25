@@ -28,12 +28,17 @@
   margin: 15px;
 }
 
+.img-container {
+  margin: 0 1% 0 0;
+}
+
 .portrait {
-  max-width: 50%;
+  max-width: 100%;
   border-radius: 3%;
+  border: 2px solid #03f4fc;
 }
 
 .card-background {
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 0 1%;
+  padding: 1%;
 }
