@@ -26,6 +26,10 @@
 .introduction-text {
   font-size: 1.2rem;
   margin: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  border: 2px solid #fff;
+  padding: 2%;
 }
 
 .img-container {
@@ -34,11 +38,13 @@
 
 .portrait {
   max-width: 100%;
-  border-radius: 3%;
-  border: 2px solid #03f4fc;
+  border-radius: 10px;
+  /* border: 2px double #000; */
 }
 
 .card-background {
   background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #000;
   padding: 1%;
+  border-radius: 10px;
 }
