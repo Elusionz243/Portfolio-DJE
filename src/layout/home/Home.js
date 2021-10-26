@@ -15,7 +15,6 @@ export default function Home() {
             <img src={portrait} alt='Dakota J. Edwards' className='portrait' />
           </div>
           <div className='introduction-text'>
-            <h3 style={{textDecoration: 'underline'}}><strong>Introduction</strong></h3>
             <p>
               Back in 2018, I thought I would end up as a pilot.
               Next thing I know, I have a camera in my hand and I'm spending my weekends shooting Music Videos,
