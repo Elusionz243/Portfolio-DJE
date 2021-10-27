@@ -74,7 +74,6 @@ ul {
 
 .mobile-menu {
   display: none;
-  /* border: solid 2px black; */
 }
 
 @media screen and (max-width: 960px) {
@@ -102,13 +101,17 @@ ul {
     z-index: -1;
   }
   .navbar__menu.active {
-    background: linear-gradient(to bottom, #5fb3d4 0%, #2dace0 100%);
+    background: radial-gradient(#9ae2ff, #0077ff);
     top: 100%;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
-    height: 60vh;
+    height: 50vh;
     font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   #navbar__logo {
     padding-left: 25px;
@@ -119,8 +122,6 @@ ul {
   }
   .navbar__links {
     text-align: center;
-    /* padding: 2rem; */
     width: 100%;
-    display: table;
   }
 }
