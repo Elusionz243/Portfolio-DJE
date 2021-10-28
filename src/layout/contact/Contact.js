@@ -12,16 +12,11 @@ export default function Contact() {
     <div className='contact-background'>
       <div className='card contact-card'>
         <div className='contact-form'>
-          <form onSubmit={handleSubmit}>
+          {/* <form onSubmit={handleSubmit}> */}
             <fieldset>
-              {/* <div className='name-container'> */}
-                <legend htmlFor='email'>Email</legend>
-                <input type='text' id='email'></input>
-                <label htmlFor='email'>Email</label>
-
-              {/* </div> */}
+              <input type='text' id='email' />
             </fieldset>
-          </form>
+          {/* </form> */}
         </div>
       </div >
     </div >

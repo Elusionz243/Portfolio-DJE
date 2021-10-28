@@ -16,6 +16,10 @@
   max-width: 90%;
 }
 
+fieldset {
+  border: 1px solid #000;
+}
+
 @media screen and (min-width: 766px) {}
 
 @media screen and (min-width: 1438px) {}
