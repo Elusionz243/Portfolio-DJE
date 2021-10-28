@@ -2,6 +2,7 @@ import React, { Redirect } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import NavigationBar from './common/NavigationBar';
 import About from './layout/about/About';
+import Contact from './layout/contact/Contact';
 import Home from './layout/home/Home';
 import Curtain from './utils/Curtain';
 
@@ -19,6 +20,9 @@ export default function Routes() {
         </Route>
         <Route path='/about'>
           <About />
+        </Route>
+        <Route path='/contact'>
+          <Contact />
         </Route>
       </Switch>
 
