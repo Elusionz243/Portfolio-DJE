@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5% 0;
+  padding: 3% 0;
+  opacity: 0;
 }
 
 .about-card {
@@ -10,6 +11,8 @@
   max-width: 90%;
   display: block;
   padding: 1%;
+  border-radius: 15px;
+  border: 2px solid #000;
 }
 
 .about-inner-card {
@@ -47,6 +50,11 @@
   justify-content: center;
   flex-direction: column-reverse;
   align-items: center;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 200ms ease;
 }
 
 @media screen and (min-width: 766px) {

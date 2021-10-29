@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './about.css';
 
@@ -6,8 +6,17 @@ import portrait from '../../imgs/AboutPortrait.jpg';
 import directorSet from '../../imgs/DirectorSet.jpg';
 
 export default function About() {
+
+  const [fade, setFade] = useState({ fade: '' });
+
+  useEffect(() => {
+    setInterval(() => {
+      setFade({ fade: 'fade-in' });
+
+    }, 300);
+  }, [setFade])
   return (
-    <div className='about-container'>
+    <div className={`about-container ${fade.fade}`}>
       <div className='card about-card'>
         <div className='about-inner-card'>
           <div className='about-section-1'>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import portrait from '../../imgs/PortraitCropped.jpg';
 import backgroundImage from '../../imgs/BackgroundImage.jpg';
@@ -7,8 +7,20 @@ import './home.css'
 
 export default function Home() {
 
+  const [fade, setFade] = useState({fade: ''});
+  useEffect(() => {
+    setInterval(() => {
+      if(fade.fade === '') setFade({fade: 'fade-in'});
+    }, 300);
+
+    return () => {
+
+    }
+  })
+
+
   return (
-    <div className='home-bg'>
+    <div className={`home-bg ${fade.fade}`}>
       <div className='intro-card'>
         <div className='card card-background intro'>
           <div className='img-container'>

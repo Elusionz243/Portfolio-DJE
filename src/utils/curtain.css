@@ -1,0 +1,72 @@
+.curtain-start-fade {
+  opacity: 30%;
+}
+
+.curtain-container {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(#b7ebff, #0077ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  padding: 0 2%;
+}
+
+.curtain-content {
+  max-width: fit-content;
+  max-height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 5%;
+}
+
+.curtain-text {
+  font-size: 1.2rem;
+}
+
+.quote-author {
+  text-align: end;
+}
+
+.curtain-btn {
+  margin: 3% 0;
+  border-radius: 15px;
+  width: 50%;
+  background-color: darkblue;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.curtain-btn:hover,
+.curtain-btn:focus {
+  background-color: #fff;
+  color: darkblue;
+  border: 2px solid darkblue;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+@media screen and (min-width: 766px) {
+  .curtain-container {
+    padding: 0 20%;
+  }
+}
+
+@media screen and (min-width: 1438px) {
+  .curtain-container {
+    padding: 0 35%;
+  }
+}

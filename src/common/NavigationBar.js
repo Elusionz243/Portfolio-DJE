@@ -16,14 +16,14 @@ export default function NavigationBar() {
   return (
     <div className='navbar'>
       <div className='navbar__container'>
-        <a href='/' id='navbar__logo'>Dakota J. Edwards</a>
+        <a href='/home' id='navbar__logo'>Dakota J. Edwards</a>
         <button onClick={() => navbarToggle(mobileMenu)} className='btn btn-link mobile-menu'>
           <i className='bi bi-list' style={{ fontSize: '2rem', color: 'black' }}></i>
         </button>
         {mobileMenu === false ?
           <ul className='navbar__menu'>
             <li className='navbar__item'>
-              <a href="/" className='navbar__links'>
+              <a href="/home" className='navbar__links'>
                 <i className='bi bi-house-door-fill'></i>
                 Home
               </a>
@@ -49,7 +49,7 @@ export default function NavigationBar() {
           </ul>
           : <ul className='navbar__menu active'>
             <li className='navbar__item'>
-              <a href="/" className='navbar__links'>
+              <a href="/home" className='navbar__links'>
                 <i className='bi bi-house-door-fill'></i>
                 Home
               </a>
