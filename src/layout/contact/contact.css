@@ -1,25 +1,71 @@
 .contact-background {
-  background-image: url("../../imgs/DirectorSet.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  height: 90vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
 }
 
 .contact-card {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 90%;
+  flex-direction: column;
+  max-width: 95%;
+  width: 100%;
+  max-height: 80%;
+  background-color: rgb(0, 196, 104);
+  border-radius: 25px;
+  padding: 3%;
+  
+}
+
+.contact-title {
+  font-size: 1.4rem;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 fieldset {
-  border: 1px solid #000;
+  width: 100%;
 }
 
-@media screen and (min-width: 766px) {}
+textarea {
+  max-height: 20em;
+}
 
-@media screen and (min-width: 1438px) {}
+.submit-button {
+  max-width: 70%;
+  width: 100%;
+}
+
+@media screen and (min-width: 766px) {
+  .contact-title {
+    font-size: 1.6rem;
+  }
+  .contact-card {
+    max-width: 75%;
+  }
+  .submit-button {
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 1438px) {
+  .contact-title {
+    font-size: 1.8rem;
+  }
+  .contact-card {
+    max-width: 45%;
+  }
+  .submit-button {
+    max-width: 30%;
+  }
+}
