@@ -10,10 +10,8 @@ export default function About() {
   const [fade, setFade] = useState({ fade: '' });
 
   useEffect(() => {
-    setInterval(() => {
-      setFade({ fade: 'fade-in' });
+    setFade({ fade: 'fade-in' });
 
-    }, 300);
   }, [setFade])
   return (
     <div className={`about-container ${fade.fade}`}>

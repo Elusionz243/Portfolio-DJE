@@ -1,22 +1,19 @@
 import React, { useState, useEffect } from 'react';
 
 import portrait from '../../imgs/PortraitCropped.jpg';
-import backgroundImage from '../../imgs/BackgroundImage.jpg';
 
 import './home.css'
 
 export default function Home() {
 
-  const [fade, setFade] = useState({fade: ''});
+  const [fade, setFade] = useState({ fade: ''});
   useEffect(() => {
-    setInterval(() => {
-      if(fade.fade === '') setFade({fade: 'fade-in'});
-    }, 300);
+    setFade({ fade: 'fade-in' });
 
     return () => {
 
     }
-  })
+  }, [setFade])
 
 
   return (

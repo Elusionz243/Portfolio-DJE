@@ -1,4 +1,4 @@
-import React, { Redirect } from 'react';
+import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import NavigationBar from './common/NavigationBar';
 import About from './layout/about/About';

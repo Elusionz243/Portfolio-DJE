@@ -2,11 +2,6 @@
   opacity: 0;
 }
 
-.fade-in {
-  opacity: 1;
-  transition: opacity 200ms ease;
-}
-
 .intro {
   color: #fff;
   display: block;
@@ -72,7 +67,6 @@
   .img-container {
     margin: 0 1% 0 0;
   }
-
   .portrait {
     max-width: 100%;
   }

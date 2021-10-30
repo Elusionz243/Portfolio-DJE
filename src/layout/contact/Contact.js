@@ -3,9 +3,9 @@ import React, { useState, useEffect } from 'react';
 import './contact.css';
 
 export default function Contact() {
-  const [fade, setFade] = useState('');
+  const [fade, setFade] = useState({ fade: '' });
   useEffect(() => {
-    setFade(c => c += 'fade-in');
+    setFade({ fade: 'fade-in'});
   }, [setFade]);
 
   const handleSubmit = (event) => {
@@ -13,7 +13,7 @@ export default function Contact() {
   }
 
   return (
-    <div className={`contact-background ${fade}`}>
+    <div className={`contact-background ${fade.fade}`}>
       <div className='contact-card'>
         <u className='contact-title'><strong>Contact Me</strong></u>
         <form onSubmit={handleSubmit} className='contact-form'>
