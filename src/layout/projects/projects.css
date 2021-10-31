@@ -1,0 +1,51 @@
+.projects-container {
+  /* display: flex;
+  justify-content: center; */
+  width: 100vw;
+  background: radial-gradient(rgb(82, 82, 82) 0%, rgb(0, 0, 0) 100%);
+}
+
+.projects-card {
+  max-width: 100vw;
+  width: 100%;
+  padding: 2% 0 5% 0;
+}
+
+.projects-title {
+  font-size: 1.5rem;
+  color: rgb(0, 255, 0);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 0 0 0.5% 0;
+}
+
+.first-carousel-video {
+  width: 100%;
+  height: 100%;
+}
+
+.video-responsive {
+  width: 100%;
+  height: 30vh;
+}
+
+@media screen and (min-width: 766px) {
+  .video-responsive {
+    height: 50vh;
+  }
+}
+
+@media screen and (min-width: 1438px) {
+  .projects-card {
+    padding: 1% 10%;
+  }
+  .video-responsive {
+    height: 60vh;
+    width: 70%;
+  }
+  .carousel-item.active {
+    display: flex;
+    justify-content: center;
+  }
+}
